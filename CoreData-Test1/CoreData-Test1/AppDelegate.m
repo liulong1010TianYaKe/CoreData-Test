@@ -60,6 +60,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
+    // CoreData模型文件的路径，
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CoreData_Test1" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
@@ -71,12 +72,14 @@
         return _persistentStoreCoordinator;
     }
     
-    // Create the coordinator and store
+    // 指定需要持久化得模型对象
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    // 持久化得存储文件
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreData_Test1.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
+    //
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -104,7 +107,9 @@
     if (!coordinator) {
         return nil;
     }
+    // 创建管理上下文
     _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    // 关联上下文与存储对象
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
 }
