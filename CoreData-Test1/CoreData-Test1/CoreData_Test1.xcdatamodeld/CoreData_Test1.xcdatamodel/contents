@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
-    <entity name="Person" representedClassName="" syncable="YES">
-        <attribute name="age" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    <entity name="ContactDetail" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jobText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactModel" inverseName="detail" inverseEntity="ContactModel" syncable="YES"/>
+    </entity>
+    <entity name="ContactModel" representedClassName="ContactModel" syncable="YES">
+        <attribute name="birthDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sex" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="detail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactDetail" inverseName="info" inverseEntity="ContactDetail" syncable="YES"/>
     </entity>
-    <entity name="Post" syncable="YES"/>
+    <entity name="Person" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Person" positionX="-63" positionY="-18" width="128" height="88"/>
-        <element name="Post" positionX="-36" positionY="27" width="128" height="45"/>
+        <element name="ContactModel" positionX="-416" positionY="36" width="128" height="118"/>
+        <element name="ContactDetail" positionX="-36" positionY="45" width="128" height="118"/>
+        <element name="Person" positionX="-189" positionY="117" width="128" height="60"/>
     </elements>
 </model>

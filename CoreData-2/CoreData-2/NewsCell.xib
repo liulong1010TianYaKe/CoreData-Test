@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Dzh-42-5QK" customClass="NewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dzh-42-5QK" id="0AC-i0-MZz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QoK-Nm-Cxm">
+                        <rect key="frame" x="10" y="10" width="90" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="ug8-sa-UEH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-2T-PBM">
+                        <rect key="frame" x="110" y="10" width="197" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descr" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="YKT-Hd-emG">
+                        <rect key="frame" x="108" y="28" width="197" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YKT-Hd-emG" secondAttribute="trailing" constant="15" id="75Y-6f-NQV"/>
+                    <constraint firstItem="QoK-Nm-Cxm" firstAttribute="leading" secondItem="0AC-i0-MZz" secondAttribute="leading" constant="10" id="Bp1-h1-EDz"/>
+                    <constraint firstAttribute="bottom" secondItem="QoK-Nm-Cxm" secondAttribute="bottom" constant="10" id="P83-Dc-AOa"/>
+                    <constraint firstItem="6Ha-2T-PBM" firstAttribute="leading" secondItem="QoK-Nm-Cxm" secondAttribute="trailing" constant="10" id="eBv-M8-XRZ"/>
+                    <constraint firstAttribute="trailing" secondItem="6Ha-2T-PBM" secondAttribute="trailing" constant="13" id="fIl-X7-z0e"/>
+                    <constraint firstItem="QoK-Nm-Cxm" firstAttribute="top" secondItem="0AC-i0-MZz" secondAttribute="top" constant="10" id="oBK-Eb-k78"/>
+                    <constraint firstItem="6Ha-2T-PBM" firstAttribute="top" secondItem="0AC-i0-MZz" secondAttribute="top" constant="10" id="pHj-jN-ajh"/>
+                    <constraint firstItem="YKT-Hd-emG" firstAttribute="top" secondItem="6Ha-2T-PBM" secondAttribute="bottom" id="qSn-JH-QRN"/>
+                    <constraint firstItem="YKT-Hd-emG" firstAttribute="leading" secondItem="QoK-Nm-Cxm" secondAttribute="trailing" constant="8" id="sNt-eY-vby"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsDescr" destination="YKT-Hd-emG" id="EeC-MK-XNV"/>
+                <outlet property="newsImageView" destination="QoK-Nm-Cxm" id="hea-pP-24j"/>
+                <outlet property="newsTitle" destination="6Ha-2T-PBM" id="E4b-Cy-q0g"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

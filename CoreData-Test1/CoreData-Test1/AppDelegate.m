@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self insertCoreData];
+        
+        [self dateFetchRequest];
+    });
     return YES;
 }
 
@@ -129,4 +134,59 @@
     }
 }
 
+
+#pragma mark -------------------
+#pragma mark -   coreData 数据操作
+
+- (void)insertCoreData{
+    
+    // 数据上下文
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    // 创建数据记录
+    NSManagedObject *contact = [NSEntityDescription insertNewObjectForEntityForName:@"ContactModel" inManagedObjectContext:context];
+    [contact setValue:@"name 1" forKey:@"name"];
+    [contact setValue:@"birthDay" forKey:@"birthDate"];
+    [contact setValue:[NSNumber numberWithBool:YES] forKey:@"sex"];
+    [contact setValue:@"5555" forKey:@"id"];
+    
+    
+    NSManagedObject *contactDetail = [NSEntityDescription insertNewObjectForEntityForName:@"ContactDetail" inManagedObjectContext:context];
+    [contactDetail setValue:@"shen zhen" forKey:@"address"];
+    [contactDetail setValue:@"4522@qq.com" forKey:@"email"];
+    [contactDetail setValue:@"Job1" forKey:@"jobText"];
+    [contactDetail setValue:@"5555" forKey:@"id"];
+    
+    [contactDetail setValue:contact forKey:@"info"];
+    [contact setValue:contactDetail forKey:@"detail"];
+    
+    
+    NSError *error;
+    
+    if (![context save:&error]) {
+        NSLog(@"不能保存 %@",[error localizedDescription]);
+    }
+}
+
+
+- (void)dateFetchRequest{
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ContactModel" inManagedObjectContext:context];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchObjects = [context executeFetchRequest:fetchRequest error:&error];
+    
+    for (NSManagedObject *info in fetchObjects) {
+        NSLog(@"name%@",[info valueForKey:@"name"]);
+        
+        NSLog(@"address %@",[info valueForKey:@"address"]);
+    }
+    
+}
 @end

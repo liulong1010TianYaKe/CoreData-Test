@@ -15,6 +15,8 @@
 		FD52E75A1CE9CC2900982A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD52E7591CE9CC2900982A05 /* Assets.xcassets */; };
 		FD52E75D1CE9CC2900982A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD52E75B1CE9CC2900982A05 /* LaunchScreen.storyboard */; };
 		FD52E7681CE9CC2900982A05 /* CoreData_Test1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD52E7671CE9CC2900982A05 /* CoreData_Test1Tests.m */; };
+		FD5794381CEC45AD005056B3 /* ContactModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5794351CEC45AD005056B3 /* ContactModel+CoreDataProperties.m */; };
+		FD5794391CEC45AD005056B3 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5794371CEC45AD005056B3 /* ContactModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		FD52E7631CE9CC2900982A05 /* CoreData-Test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData-Test1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD52E7671CE9CC2900982A05 /* CoreData_Test1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreData_Test1Tests.m; sourceTree = "<group>"; };
 		FD52E7691CE9CC2900982A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5794341CEC45AD005056B3 /* ContactModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FD5794351CEC45AD005056B3 /* ContactModel+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FD5794361CEC45AD005056B3 /* ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactModel.h; sourceTree = "<group>"; };
+		FD5794371CEC45AD005056B3 /* ContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,10 @@
 		FD52E73E1CE9CC2900982A05 = {
 			isa = PBXGroup;
 			children = (
+				FD5794341CEC45AD005056B3 /* ContactModel+CoreDataProperties.h */,
+				FD5794351CEC45AD005056B3 /* ContactModel+CoreDataProperties.m */,
+				FD5794361CEC45AD005056B3 /* ContactModel.h */,
+				FD5794371CEC45AD005056B3 /* ContactModel.m */,
 				FD52E7491CE9CC2900982A05 /* CoreData-Test1 */,
 				FD52E7661CE9CC2900982A05 /* CoreData-Test1Tests */,
 				FD52E7481CE9CC2900982A05 /* Products */,
@@ -159,7 +169,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = long;
+				ORGANIZATIONNAME = hzins;
 				TargetAttributes = {
 					FD52E7461CE9CC2900982A05 = {
 						CreatedOnToolsVersion = 7.3;
@@ -214,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5794391CEC45AD005056B3 /* ContactModel.m in Sources */,
+				FD5794381CEC45AD005056B3 /* ContactModel+CoreDataProperties.m in Sources */,
 				FD52E7521CE9CC2900982A05 /* ViewController.m in Sources */,
 				FD52E74F1CE9CC2900982A05 /* AppDelegate.m in Sources */,
 				FD52E7581CE9CC2900982A05 /* CoreData_Test1.xcdatamodeld in Sources */,
@@ -408,6 +420,7 @@
 				FD52E76E1CE9CC2900982A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD52E76F1CE9CC2900982A05 /* Build configuration list for PBXNativeTarget "CoreData-Test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +429,7 @@
 				FD52E7711CE9CC2900982A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
