@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDDC3B501CED56EB00967314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B4F1CED56EB00967314 /* main.m */; };
+		FDDC3B531CED56EB00967314 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B521CED56EB00967314 /* AppDelegate.m */; };
+		FDDC3B561CED56EB00967314 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B551CED56EB00967314 /* ViewController.m */; };
+		FDDC3B591CED56EB00967314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDC3B571CED56EB00967314 /* Main.storyboard */; };
+		FDDC3B5B1CED56EB00967314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDC3B5A1CED56EB00967314 /* Assets.xcassets */; };
+		FDDC3B5E1CED56EB00967314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDC3B5C1CED56EB00967314 /* LaunchScreen.storyboard */; };
+		FDDC3B691CED56EB00967314 /* CoreData__PostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B681CED56EB00967314 /* CoreData__PostTests.m */; };
+		FDDC3B741CED576C00967314 /* 城市邮编最终整理_方便导入数据库.txt in Resources */ = {isa = PBXBuildFile; fileRef = FDDC3B731CED576C00967314 /* 城市邮编最终整理_方便导入数据库.txt */; };
+		FDDC3B771CED57E300967314 /* Post.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B751CED57E300967314 /* Post.xcdatamodeld */; };
+		FDDC3B7C1CED58A700967314 /* PostCode+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B791CED58A700967314 /* PostCode+CoreDataProperties.m */; };
+		FDDC3B7D1CED58A700967314 /* PostCode.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B7B1CED58A700967314 /* PostCode.m */; };
+		FDDC3B801CED5B8C00967314 /* YKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDC3B7F1CED5B8C00967314 /* YKCoreDataManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDDC3B651CED56EB00967314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDC3B431CED56EA00967314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDC3B4A1CED56EA00967314;
+			remoteInfo = "CoreData--Post";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDDC3B4B1CED56EA00967314 /* CoreData--Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData--Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDC3B4F1CED56EB00967314 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDDC3B511CED56EB00967314 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDDC3B521CED56EB00967314 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDDC3B541CED56EB00967314 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDDC3B551CED56EB00967314 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDDC3B581CED56EB00967314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDDC3B5A1CED56EB00967314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDDC3B5D1CED56EB00967314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDDC3B5F1CED56EB00967314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDC3B641CED56EB00967314 /* CoreData--PostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData--PostTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDC3B681CED56EB00967314 /* CoreData__PostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreData__PostTests.m; sourceTree = "<group>"; };
+		FDDC3B6A1CED56EB00967314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDC3B731CED576C00967314 /* 城市邮编最终整理_方便导入数据库.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "城市邮编最终整理_方便导入数据库.txt"; sourceTree = "<group>"; };
+		FDDC3B761CED57E300967314 /* Post.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Post.xcdatamodel; sourceTree = "<group>"; };
+		FDDC3B781CED58A700967314 /* PostCode+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PostCode+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDDC3B791CED58A700967314 /* PostCode+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PostCode+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDDC3B7A1CED58A700967314 /* PostCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCode.h; sourceTree = "<group>"; };
+		FDDC3B7B1CED58A700967314 /* PostCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCode.m; sourceTree = "<group>"; };
+		FDDC3B7E1CED5B8C00967314 /* YKCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKCoreDataManager.h; sourceTree = "<group>"; };
+		FDDC3B7F1CED5B8C00967314 /* YKCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKCoreDataManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDDC3B481CED56EA00967314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDC3B611CED56EB00967314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDDC3B421CED56EA00967314 = {
+			isa = PBXGroup;
+			children = (
+				FDDC3B4D1CED56EB00967314 /* CoreData--Post */,
+				FDDC3B671CED56EB00967314 /* CoreData--PostTests */,
+				FDDC3B4C1CED56EA00967314 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDDC3B4C1CED56EA00967314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC3B4B1CED56EA00967314 /* CoreData--Post.app */,
+				FDDC3B641CED56EB00967314 /* CoreData--PostTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDDC3B4D1CED56EB00967314 /* CoreData--Post */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC3B511CED56EB00967314 /* AppDelegate.h */,
+				FDDC3B521CED56EB00967314 /* AppDelegate.m */,
+				FDDC3B541CED56EB00967314 /* ViewController.h */,
+				FDDC3B551CED56EB00967314 /* ViewController.m */,
+				FDDC3B571CED56EB00967314 /* Main.storyboard */,
+				FDDC3B731CED576C00967314 /* 城市邮编最终整理_方便导入数据库.txt */,
+				FDDC3B5A1CED56EB00967314 /* Assets.xcassets */,
+				FDDC3B5C1CED56EB00967314 /* LaunchScreen.storyboard */,
+				FDDC3B5F1CED56EB00967314 /* Info.plist */,
+				FDDC3B4E1CED56EB00967314 /* Supporting Files */,
+				FDDC3B751CED57E300967314 /* Post.xcdatamodeld */,
+				FDDC3B781CED58A700967314 /* PostCode+CoreDataProperties.h */,
+				FDDC3B791CED58A700967314 /* PostCode+CoreDataProperties.m */,
+				FDDC3B7A1CED58A700967314 /* PostCode.h */,
+				FDDC3B7B1CED58A700967314 /* PostCode.m */,
+				FDDC3B7E1CED5B8C00967314 /* YKCoreDataManager.h */,
+				FDDC3B7F1CED5B8C00967314 /* YKCoreDataManager.m */,
+			);
+			path = "CoreData--Post";
+			sourceTree = "<group>";
+		};
+		FDDC3B4E1CED56EB00967314 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC3B4F1CED56EB00967314 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDDC3B671CED56EB00967314 /* CoreData--PostTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC3B681CED56EB00967314 /* CoreData__PostTests.m */,
+				FDDC3B6A1CED56EB00967314 /* Info.plist */,
+			);
+			path = "CoreData--PostTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDDC3B4A1CED56EA00967314 /* CoreData--Post */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDC3B6D1CED56EB00967314 /* Build configuration list for PBXNativeTarget "CoreData--Post" */;
+			buildPhases = (
+				FDDC3B471CED56EA00967314 /* Sources */,
+				FDDC3B481CED56EA00967314 /* Frameworks */,
+				FDDC3B491CED56EA00967314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreData--Post";
+			productName = "CoreData--Post";
+			productReference = FDDC3B4B1CED56EA00967314 /* CoreData--Post.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDDC3B631CED56EB00967314 /* CoreData--PostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDC3B701CED56EB00967314 /* Build configuration list for PBXNativeTarget "CoreData--PostTests" */;
+			buildPhases = (
+				FDDC3B601CED56EB00967314 /* Sources */,
+				FDDC3B611CED56EB00967314 /* Frameworks */,
+				FDDC3B621CED56EB00967314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDC3B661CED56EB00967314 /* PBXTargetDependency */,
+			);
+			name = "CoreData--PostTests";
+			productName = "CoreData--PostTests";
+			productReference = FDDC3B641CED56EB00967314 /* CoreData--PostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDDC3B431CED56EA00967314 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = long;
+				TargetAttributes = {
+					FDDC3B4A1CED56EA00967314 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					FDDC3B631CED56EB00967314 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FDDC3B4A1CED56EA00967314;
+					};
+				};
+			};
+			buildConfigurationList = FDDC3B461CED56EA00967314 /* Build configuration list for PBXProject "CoreData--Post" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDDC3B421CED56EA00967314;
+			productRefGroup = FDDC3B4C1CED56EA00967314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDDC3B4A1CED56EA00967314 /* CoreData--Post */,
+				FDDC3B631CED56EB00967314 /* CoreData--PostTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDDC3B491CED56EA00967314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDC3B5E1CED56EB00967314 /* LaunchScreen.storyboard in Resources */,
+				FDDC3B741CED576C00967314 /* 城市邮编最终整理_方便导入数据库.txt in Resources */,
+				FDDC3B5B1CED56EB00967314 /* Assets.xcassets in Resources */,
+				FDDC3B591CED56EB00967314 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDC3B621CED56EB00967314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDDC3B471CED56EA00967314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDC3B7D1CED58A700967314 /* PostCode.m in Sources */,
+				FDDC3B561CED56EB00967314 /* ViewController.m in Sources */,
+				FDDC3B801CED5B8C00967314 /* YKCoreDataManager.m in Sources */,
+				FDDC3B531CED56EB00967314 /* AppDelegate.m in Sources */,
+				FDDC3B501CED56EB00967314 /* main.m in Sources */,
+				FDDC3B7C1CED58A700967314 /* PostCode+CoreDataProperties.m in Sources */,
+				FDDC3B771CED57E300967314 /* Post.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDC3B601CED56EB00967314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDC3B691CED56EB00967314 /* CoreData__PostTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDDC3B661CED56EB00967314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDC3B4A1CED56EA00967314 /* CoreData--Post */;
+			targetProxy = FDDC3B651CED56EB00967314 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDDC3B571CED56EB00967314 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDC3B581CED56EB00967314 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDDC3B5C1CED56EB00967314 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDC3B5D1CED56EB00967314 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDDC3B6B1CED56EB00967314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDDC3B6C1CED56EB00967314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDDC3B6E1CED56EB00967314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CoreData--Post/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hzins.CoreData--Post";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDDC3B6F1CED56EB00967314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CoreData--Post/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hzins.CoreData--Post";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDDC3B711CED56EB00967314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CoreData--PostTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hzins.CoreData--PostTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreData--Post.app/CoreData--Post";
+			};
+			name = Debug;
+		};
+		FDDC3B721CED56EB00967314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CoreData--PostTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hzins.CoreData--PostTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreData--Post.app/CoreData--Post";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDDC3B461CED56EA00967314 /* Build configuration list for PBXProject "CoreData--Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDC3B6B1CED56EB00967314 /* Debug */,
+				FDDC3B6C1CED56EB00967314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDC3B6D1CED56EB00967314 /* Build configuration list for PBXNativeTarget "CoreData--Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDC3B6E1CED56EB00967314 /* Debug */,
+				FDDC3B6F1CED56EB00967314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDDC3B701CED56EB00967314 /* Build configuration list for PBXNativeTarget "CoreData--PostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDC3B711CED56EB00967314 /* Debug */,
+				FDDC3B721CED56EB00967314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDDC3B751CED57E300967314 /* Post.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDDC3B761CED57E300967314 /* Post.xcdatamodel */,
+			);
+			currentVersion = FDDC3B761CED57E300967314 /* Post.xcdatamodel */;
+			path = Post.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDDC3B431CED56EA00967314 /* Project object */;
+}

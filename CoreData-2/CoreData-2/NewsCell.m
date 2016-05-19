@@ -29,15 +29,7 @@
 
 -(void)setContent:(News*)info
 {
-//    [_newsImageView setImageWithURL:[NSURL URLWithString:info.imgurl]];
-//    [_newsImageView sd_setImageWithURL:[NSURL URLWithString:info.imgurl] placeholderImage:nil];
-//    [_newsImageView sd_setImageWithURL:[NSURL URLWithString:info.imgurl]];
-//    [_newsImageView sd_setImageWithURL:[NSURL URLWithString:info.imgurl] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-//        if (image) {
-//            _newsImageView.image = image;
-//        }
-//    }];
-    
+
     
     [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:info.imgurl] placeholderImage:[UIImage imageNamed:@""]];
     _newsTitle.text = info.title;
